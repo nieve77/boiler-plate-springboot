@@ -19,10 +19,11 @@ apply plugin : 'io.spring.dependency-management'
 
 group 'org.example'
 version '1.0-SNAPSHOT'
+sourceCompatibility = '1.8'
+
 
 repositories {
     mavenCentral()
-    jcenter()
 }
 
 dependencies {
@@ -30,6 +31,14 @@ dependencies {
     //testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
     implementation('org.springframework.boot:spring-boot-starter-web') //Gradle 7버전부터 compile()못씀
     testImplementation('org.springframework.boot:spring-boot-starter-test') //Gradle 7버전부터 testcompile()못씀
+
+    // lombok
+    implementation('org.projectlombok:lombok:1.18.20') //java16 버전에서는 lombok 1.18.20부터 사용가능
+    annotationProcessor('org.projectlombok:lombok:1.18.20')
+
+    //Spring Data Jpa
+    implementation('org.springframework.boot:spring-boot-starter-data-jpa')
+    implementation('com.h2database:h2')
 }
 
 test {
