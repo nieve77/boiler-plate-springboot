@@ -1,4 +1,4 @@
-package example.org.springboot.web.domain.posts;
+package example.org.springboot.domain.posts;
 import example.org.springboot.domain.posts.Posts;
 import example.org.springboot.domain.posts.PostsRepository;
 import org.junit.jupiter.api.AfterEach;
