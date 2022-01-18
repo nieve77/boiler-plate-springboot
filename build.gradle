@@ -35,6 +35,9 @@ dependencies {
 
     //mustache
     implementation('org.springframework.boot:spring-boot-starter-mustache')
+
+    //oauth2
+    implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
 }
 
 // for Junit5를 사용하기 위해 필수
