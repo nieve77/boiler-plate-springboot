@@ -38,6 +38,12 @@ dependencies {
 
     //oauth2
     implementation('org.springframework.boot:spring-boot-starter-oauth2-client')
+
+    //jdbc
+    implementation('org.springframework.session:spring-session-jdbc')
+
+    //스프링 시큐리티 테스트
+    testImplementation('org.springframework.security:spring-security-test')
 }
 
 // for Junit5를 사용하기 위해 필수
